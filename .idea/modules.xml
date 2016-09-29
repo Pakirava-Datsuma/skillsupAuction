@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/auction.iml" filepath="$PROJECT_DIR$/auction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-aop/auction-aop.iml" filepath="$PROJECT_DIR$/auction-aop/auction-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-dao-api/auction-dao-api.iml" filepath="$PROJECT_DIR$/auction-dao-api/auction-dao-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-dao-impl/auction-dao-impl.iml" filepath="$PROJECT_DIR$/auction-dao-impl/auction-dao-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-domain/auction-domain.iml" filepath="$PROJECT_DIR$/auction-domain/auction-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-main/auction-main.iml" filepath="$PROJECT_DIR$/auction-main/auction-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-service/auction-service.iml" filepath="$PROJECT_DIR$/auction-service/auction-service.iml" />
+    </modules>
+  </component>
+</project>

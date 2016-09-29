@@ -1,20 +1,17 @@
 package com.skillsup.auction.main;
 
-import com.skillsup.auction.domain.User;
 import com.skillsup.auction.service.AuctionService;
 import com.skillsup.auction.service.ItemService;
 import com.skillsup.auction.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import javax.annotation.PostConstruct;
-
 /**
  * Created by swanta on 17.09.16.
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath*:main.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath*:beans.xml");
         AuctionService service = context.getBean(AuctionService.class);
         UserService users = context.getBean(UserService.class);
         ItemService items = context.getBean(ItemService.class);
@@ -23,17 +20,17 @@ public class Main {
         users.createUser("administrator", "Amanda", "Smith");
         users.createUser("john38", "Endie", "Johnson");
         users.createUser("SharpFeather", "April", "O'Neal");
-        }
+
+        items.createItem("шпилька", "такая шпилька, отпущенная в сторону девушки, заставит её обратить на Вас внимание");
+        items.createItem("совесть", "случайно нашел на дороге, состояние: немножко б/у");
+        items.createItem("то-не-знаю-что", "сходил туда-не-знаю-куда, достал две - дишнюю продаю");
 
         System.out.println("Users: " + service.getUsers().size());
     }
 }
 
 /*
- * При этом создать beans.xml в модуле auction-main с annotation-config и
- * component-scan (некоторые успели сделали это на занятии)
- * 4. В Main классе использовать эти сервиса для следующей логики:
-     * 1. Создать несколько User’ов
+
      * 2. Создать несколько Item’ов
      * 3. Один пользователей создает лот
      * 4. Несколько других пользователей делают ставки

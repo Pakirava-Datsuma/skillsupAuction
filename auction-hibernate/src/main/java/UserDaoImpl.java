@@ -1,6 +1,7 @@
 import com.skillsup.auction.dao.api.UserDao;
 import com.skillsup.auction.domain.User;
 import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -22,16 +23,17 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User getUser(String login) {
-        return null;
+        return em.find(User.class, new User(login, "", ""));
     }
 
     @Override
-    @org.springframework.transaction.annotation.Transactional(propagation = Propagation.REQIRED)
+    @Transactional(propagation = Propagation.REQUIRED)
     public void add(User entity) {
 
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public void remove(User entity) {
 
     }

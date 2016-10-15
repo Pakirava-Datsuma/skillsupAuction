@@ -1,28 +1,30 @@
 package com.skillsup.auction.domain;
 
+import lombok.Data;
+
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.List;
+
 /**
  * Created by swanta on 17.09.16.
  */
+
+@Data
 public class User {
+
+    @Id
+    @GeneratedValue
+    private long id;
+
     private final String login;
     private final String firstName;
     private final String lastName;
 
-    public User(String login, String firstName, String lastName) {
-        this.login = login;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+    @OneToMany(mappedBy = "Lot", fetch = FetchType.LAZY)
+    private List<Lot> lots;
 
-    public String getLogin() {
-        return login;
-    }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
 }

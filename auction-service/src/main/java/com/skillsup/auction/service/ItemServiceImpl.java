@@ -2,6 +2,7 @@ package com.skillsup.auction.service;
 
 import com.skillsup.auction.dao.api.ItemDao;
 import com.skillsup.auction.domain.Item;
+import com.skillsup.auction.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,8 +24,8 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public Item createItem(String title, String description) {
-        Item item = new Item(title, description);
+    public Item createItem(String title, String description, User user) {
+        Item item = new Item(0, title, description, user);
         items.add(item);
         return item;
     }

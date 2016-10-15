@@ -29,6 +29,7 @@
         <module name="auction-hibernate" />
         <module name="auction-main" />
         <module name="auction-service" />
+        <module name="auction-spring-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,6 +41,7 @@
       <module name="auction-hibernate" target="1.8" />
       <module name="auction-main" target="1.8" />
       <module name="auction-service" target="1.8" />
+      <module name="auction-spring-data" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

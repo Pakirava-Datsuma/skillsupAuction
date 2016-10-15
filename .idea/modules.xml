@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/auction-hibernate/auction-hibernate.iml" filepath="$PROJECT_DIR$/auction-hibernate/auction-hibernate.iml" />
       <module fileurl="file://$PROJECT_DIR$/auction-main/auction-main.iml" filepath="$PROJECT_DIR$/auction-main/auction-main.iml" />
       <module fileurl="file://$PROJECT_DIR$/auction-service/auction-service.iml" filepath="$PROJECT_DIR$/auction-service/auction-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auction-spring-data/auction-spring-data.iml" filepath="$PROJECT_DIR$/auction-spring-data/auction-spring-data.iml" />
     </modules>
   </component>
 </project>

@@ -15,11 +15,12 @@
         <module>auction-service</module>
         <module>auction-main</module>
         <module>auction-hibernate</module>
+        <module>auction-spring-data</module>
         <!--<module>auction-aop</module>-->
     </modules>
 
     <properties>
-        <spring-version>4.3.1.RELEASE</spring-version>
+        <spring-version>4.3.3.RELEASE</spring-version>
         <jpa-version>1.0.0.Final</jpa-version>
     </properties>
 

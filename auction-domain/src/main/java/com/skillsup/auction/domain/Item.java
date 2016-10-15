@@ -1,13 +1,19 @@
 package com.skillsup.auction.domain;
 
+import lombok.Data;
+import javax.persistence.entity;
+
 /**
  * Created by swanta on 17.09.16.
  */
-public class Item {
-    String title, description;
 
-    public Item(String title, String description) {
-        this.title = title;
-        this.description = description;
-    }
+@Data
+@Entity
+public class Item {
+
+    @Id
+    private long id;
+
+    private String title;
+    private String description;
 }

@@ -18,6 +18,13 @@
         <module>auction-spring-data</module>
         <!--<module>auction-aop</module>-->
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>skillsup</groupId>
+            <artifactId>auction-domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <spring-version>4.3.3.RELEASE</spring-version>

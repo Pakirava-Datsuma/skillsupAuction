@@ -1,3 +1,5 @@
+package com.skillsup.auction.hibernate;
+
 import com.skillsup.auction.dao.api.LotDao;
 import com.skillsup.auction.domain.Lot;
 import org.springframework.stereotype.Repository;

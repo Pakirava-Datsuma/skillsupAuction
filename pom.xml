@@ -14,11 +14,13 @@
         <module>auction-dao-impl</module>
         <module>auction-service</module>
         <module>auction-main</module>
+        <module>auction-hibernate</module>
         <!--<module>auction-aop</module>-->
     </modules>
 
     <properties>
         <spring-version>4.3.1.RELEASE</spring-version>
+        <jpa-version>1.0.0.Final</jpa-version>
     </properties>
 
     <dependencyManagement>
@@ -27,6 +29,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hiberante.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>${jpa-version}</version>
         </dependency>
 
     </dependencies>

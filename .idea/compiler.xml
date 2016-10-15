@@ -14,7 +14,7 @@
       <entry name="!?*.aj" />
     </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
+      <profile default="true" name="Default" enabled="true">
         <processorPath useClasspath="true" />
       </profile>
       <profile default="false" name="Maven default annotation processors profile" enabled="true">
@@ -26,6 +26,7 @@
         <module name="auction-dao-api" />
         <module name="auction-dao-impl" />
         <module name="auction-domain" />
+        <module name="auction-hibernate" />
         <module name="auction-main" />
         <module name="auction-service" />
       </profile>
@@ -36,6 +37,7 @@
       <module name="auction-dao-api" target="1.8" />
       <module name="auction-dao-impl" target="1.8" />
       <module name="auction-domain" target="1.8" />
+      <module name="auction-hibernate" target="1.8" />
       <module name="auction-main" target="1.8" />
       <module name="auction-service" target="1.8" />
     </bytecodeTargetLevel>

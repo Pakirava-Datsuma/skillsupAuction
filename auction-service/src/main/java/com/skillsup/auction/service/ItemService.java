@@ -1,6 +1,7 @@
 package com.skillsup.auction.service;
 
 import com.skillsup.auction.domain.Item;
+import com.skillsup.auction.domain.User;
 
 import java.util.Collection;
 
@@ -9,5 +10,5 @@ import java.util.Collection;
  */
 public interface ItemService {
     Collection<Item> getAll();
-    Item createItem(String title, String description);
+    Item createItem(String title, String description, User user);
 }

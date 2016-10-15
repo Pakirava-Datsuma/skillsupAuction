@@ -17,13 +17,12 @@ public class Main {
         ItemService items = context.getBean(ItemService.class);
 
 
-        users.createUser("administrator", "Amanda", "Smith");
-        users.createUser("john38", "Endie", "Johnson");
-        users.createUser("SharpFeather", "April", "O'Neal");
-
-        items.createItem("шпилька", "такая шпилька, отпущенная в сторону девушки, заставит её обратить на Вас внимание");
-        items.createItem("совесть", "случайно нашел на дороге, состояние: немножко б/у");
-        items.createItem("то-не-знаю-что", "сходил туда-не-знаю-куда, достал две - дишнюю продаю");
+        items.createItem("шпилька", "такая шпилька, отпущенная в сторону девушки, заставит её обратить на Вас внимание",
+                users.createUser("administrator", "Amanda", "Smith"));
+        items.createItem("совесть", "случайно нашел на дороге, состояние: немножко б/у",
+                users.createUser("john38", "Endie", "Johnson"));
+        items.createItem("то-не-знаю-что", "сходил туда-не-знаю-куда, достал две - дишнюю продаю",
+                users.createUser("SharpFeather", "April", "O'Neal"));
 
         System.out.println("Users: " + service.getUsers().size());
     }

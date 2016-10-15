@@ -1,7 +1,9 @@
 package com.skillsup.auction.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -9,9 +11,11 @@ import java.util.Date;
  */
 
 @Data
-@javax.persistence.Entity
+@AllArgsConstructor
+@Entity
 public class Lot {
     @Id
+    @GeneratedValue
     private long id;
 
 
@@ -20,4 +24,12 @@ public class Lot {
     public Date getEndDate() {
         return endDate;
     }
+
+    @ManyToOne
+    @JoinColumn (name="user_id")
+    private User user;
+
+    @OneToOne
+    @JoinColumn (name = "item_id")
+    private Item item;
 }

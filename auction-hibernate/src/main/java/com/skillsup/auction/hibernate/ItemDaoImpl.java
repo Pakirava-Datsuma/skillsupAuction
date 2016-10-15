@@ -1,3 +1,5 @@
+package com.skillsup.auction.hibernate;
+
 import com.skillsup.auction.dao.api.ItemDao;
 import com.skillsup.auction.domain.Item;
 

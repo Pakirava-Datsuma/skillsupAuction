@@ -1,3 +1,5 @@
+package com.skillsup.auction.hibernate;
+
 import com.skillsup.auction.dao.api.UserDao;
 import com.skillsup.auction.domain.User;
 import org.springframework.transaction.annotation.Propagation;
